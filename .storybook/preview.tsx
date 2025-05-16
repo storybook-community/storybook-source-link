@@ -1,11 +1,11 @@
 import React from 'react'
-import { Preview } from '@storybook/react-webpack5';
+import type { Preview } from "@storybook/react-vite";
 import { ErrorBoundary } from "react-error-boundary";
 
 const preview: Preview = {
   parameters: {
-    sourceLinkPrefix: 'https://github.com/Sirrine-Jonathan/storybook-source-link/blob/main/stories/',
-    sourceLink: 'ManualTesting/Component.js'
+    sourceLinkPrefix: 'https://github.com/Sirrine-Jonathan/storybook-source-link/blob/main/src/stories/',
+    sourceLink: 'ManualTesting/Component.jsx'
   },
   decorators: [(Story) => {
     return (

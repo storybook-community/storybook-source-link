@@ -1,13 +1,13 @@
-import React from "react";
-import { Icons, IconButton, TooltipMessage, WithTooltip } from "@storybook/components";
-import { PARAM_KEY, PREFIX_PARAM_KEY, ICON_PARAM_KEY, INFO_LINK, TOOL_ID } from "./constants";
-import { useParameter } from '@storybook/manager-api';
+import React, { memo } from "react";
+import { RepoIcon } from "@storybook/icons";
+import { useParameter } from "storybook/internal/manager-api";
+import { IconButton, TooltipMessage, WithTooltip } from "storybook/internal/components";
 
-
+import { PARAM_KEY, PREFIX_PARAM_KEY, INFO_LINK, TOOL_ID } from "./constants";
 
 const Tooltip = () => (
   <TooltipMessage
-    title="Repository Link"
+    title="Source Link"
     desc={`No repository link set in this story`}
     links={[{ title: 'More Info', onClick: () => {
       window.open(INFO_LINK)
@@ -21,10 +21,9 @@ export const getLink = (prefix: string | undefined, link: string | undefined) =>
   return link
 }
 
-export const Tool = () => {
+export const Tool = memo(function SourceLinkTool() {
   let param_link = useParameter(PARAM_KEY, null)
   let param_prefix = useParameter(PREFIX_PARAM_KEY, null)
-  let param_icon = useParameter(ICON_PARAM_KEY, "repository");
   const link = getLink(param_prefix, param_link)
 
   return (
@@ -40,17 +39,18 @@ export const Tool = () => {
       }}
       aria-label={`View Source Repository: ${link}`}
     >
-      <Icons icon={param_icon as any} />
+      <RepoIcon />
     </IconButton>
     :
     <WithTooltip placement="top" trigger="click" tooltip={<Tooltip />}>
       <IconButton
         key={TOOL_ID}
         title="View Source Repository"
+        aria-label="View Source Repository"
         active={false}
       >
-        <Icons icon={param_icon as any} />
+        <RepoIcon />
       </IconButton>
     </WithTooltip>
   );
-};
+});

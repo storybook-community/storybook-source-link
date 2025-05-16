@@ -73,10 +73,10 @@ Story sourceLink: ${OVERRIDE_ALL_WITHOUT_REPLACEMENT.parameters.sourceLink}
 // BOTH:BOTH:JUST_PREFIX - override prefix at story level, but use component link
 export const STORY_WITH_ONLY_PREFIX = Template.bind({});
 STORY_WITH_ONLY_PREFIX.parameters = {
-    sourceLinkPrefix: 'https://raw.githubusercontent.com/Sirrine-Jonathan/storybook-source-link/main/stories/'
+    sourceLinkPrefix: 'https://raw.githubusercontent.com/Sirrine-Jonathan/storybook-source-link/main/src/stories/'
 }
 STORY_WITH_ONLY_PREFIX.args = {
-    expectedLink: 'https://raw.githubusercontent.com/Sirrine-Jonathan/storybook-source-link/main/stories/ManualTesting/Component.js',
+    expectedLink: 'https://raw.githubusercontent.com/Sirrine-Jonathan/storybook-source-link/main/src/stories/ManualTesting/Component.jsx',
     title: 'STORY_WITH_ONLY_PREFIX',
     notes: "Here's what happens if you supply sourceLinkPrefix to the story, but not a sourceLink, leaving it to inherit from the component or preview.",
     details: `
@@ -106,11 +106,11 @@ Story sourceLink: ${COMPONENT_PREFIX_STORY_LINK.parameters.sourceLink}
 // BOTH:BOTH:NONE - use params defined at component and preview level
 export const NO_STORY_PARAMS = Template.bind({});
 NO_STORY_PARAMS.args = {
-    expectedLink: 'https://gooManualTesting/Component.js',
+    expectedLink: 'https://gooManualTesting/Component.jsx',
     title: 'NO_STORY_PARAMS',
     notes: `With no params given to the story, it's left to inherit from the component or preview. 
     It inherits the preview portion from the component (https://goo), 
-    and the link portion from the preview level (ManualTesting/Component.js) which won't make a valid link.`,
+    and the link portion from the preview level (ManualTesting/Component.jsx) which won't make a valid link.`,
     details: `
 ${details}
 Story sourceLinkPrefix: ${NO_STORY_PARAMS.parameters?.sourceLinkPrefix}

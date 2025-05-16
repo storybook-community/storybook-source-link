@@ -1,25 +1,25 @@
-import { StorybookConfig } from '@storybook/react-webpack5';
-
-const config: StorybookConfig =  {
+import type { StorybookConfig } from "@storybook/react-vite";
+const config: StorybookConfig = {
   stories: [
-    "../stories/**/*.stories.js",
+    "../src/stories/**/*.stories.jsx",
   ],
-
-  addons: ["../preset.js", "@storybook/addon-essentials", "@storybook/components", "@storybook/manager-api", "@storybook/preview-api"],
-
+  addons: [
+    "@storybook/addon-docs",
+    "@storybook/addon-links",
+    "@storybook/addon-essentials",
+    "@storybook/addon-interactions",
+    "./local-preset.js",
+  ],
   framework: {
-    name: "@storybook/react-webpack5",
-    options: {}
+    name: "@storybook/react-vite",
+    options: {},
   },
-
   docs: {
-    autodocs: 'tag'
+    autodocs: "tag",
   },
-
-  webpackFinal: async (config, { configType }) => {
-    config.devtool = 'inline-source-map'
-    return config;
+  // See https://github.com/storybookjs/storybook/issues/31284.
+  typescript: {
+    reactDocgen: "react-docgen-typescript",
   },
 };
-
 export default config;

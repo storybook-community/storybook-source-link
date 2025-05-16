@@ -1,4 +1,4 @@
-import { getLink } from '../src/Tool'
+import { getLink } from '../Tool'
 
 describe('Tool tests', () => {
     it('should return prefix and link combined', () => {

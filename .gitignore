@@ -6,5 +6,10 @@ build-storybook.log
 .env
 .npmrc
 
-src/**/*.js
-src/**/*.js.map
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+.pnp.*
