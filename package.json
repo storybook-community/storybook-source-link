@@ -107,7 +107,6 @@
     "zx": "^8.5.4"
   },
   "peerDependencies": {
-    "@storybook/icons": "^1.4.0",
     "storybook": "^9.0.0"
   },
   "resolutions": {
