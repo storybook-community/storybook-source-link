@@ -1,9 +1,10 @@
 {
-  "name": "storybook-source-link",
+  "name": "@storybook-community/storybook-source-link",
   "version": "5.0.0",
   "description": "Provides a link to the story's source in the toolbar",
   "keywords": [
     "storybook-addons",
+    "storybook-community",
     "storybook",
     "code",
     "source",
@@ -11,7 +12,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/Sirrine-Jonathan/storybook-source-link"
+    "url": "https://github.com/storybook-community/storybook-source-link"
   },
   "type": "module",
   "author": "Jonathan Sirrine <sirrineprogramming@gmail.com>",

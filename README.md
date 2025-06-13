@@ -1,28 +1,25 @@
 <h1 id="main">Storybook Addon Source Link</h1>
 
+> [!NOTE]
+> This is a fork maintained by the community to provide support for Storybook 9 and beyond. This addon was originally developed by Jonathan Sirrine.
+
+------
+
 [![Storybook](https://img.shields.io/badge/-Storybook-FF4785?&logo=storybook&logoColor=white)](https://storybook.js.org/addons/storybook-source-link/) [![npm](https://img.shields.io/npm/v/storybook-source-link?logo=npm)](https://www.npmjs.com/package/storybook-source-link?activeTab=versions) [![npm](https://img.shields.io/npm/dt/storybook-source-link)](https://www.npmjs.com/package/storybook-source-link) [![npm](https://img.shields.io/npm/dm/storybook-source-link)](https://www.npmjs.com/package/storybook-source-link) [![npm](https://img.shields.io/npm/dw/storybook-source-link)](https://www.npmjs.com/package/storybook-source-link) [![npm](https://img.shields.io/npm/l/storybook-source-link)](https://www.npmjs.com/package/storybook-source-link?activeTab=license)  
 [![npms.io (final)](https://img.shields.io/npms-io/final-score/storybook-source-link)]() [![npms.io (quality)](https://img.shields.io/npms-io/quality-score/storybook-source-link)](https://npms.io/about) [![npms.io (maintenance)](https://img.shields.io/npms-io/maintenance-score/storybook-source-link)](https://npms.io/about) [![npms.io (popularity)](https://img.shields.io/npms-io/popularity-score/storybook-source-link)](https://npms.io/about)  
-[![Snyk Vulnerabilities for npm package](https://img.shields.io/snyk/vulnerabilities/npm/storybook-source-link?logo=snyk)](https://libraries.io/npm/storybook-source-link) [![Libraries.io dependency status for latest release](https://img.shields.io/librariesio/release/npm/storybook-source-link?logo=libraries.io&logoColor=white)](https://libraries.io/npm/storybook-source-link) [![Libraries.io SourceRank](https://img.shields.io/librariesio/sourcerank/npm/storybook-source-link?logo=libraries.io&logoColor=white)](https://docs.libraries.io/overview.html#sourcerank)
+[![Libraries.io dependency status for latest release](https://img.shields.io/librariesio/release/npm/storybook-source-link?logo=libraries.io&logoColor=white)](https://libraries.io/npm/storybook-source-link) [![Libraries.io SourceRank](https://img.shields.io/librariesio/sourcerank/npm/storybook-source-link?logo=libraries.io&logoColor=white)](https://docs.libraries.io/overview.html#sourcerank)
 
 
 Provides a link to the story's source in the toolbar.
 
-<h2 id="support">Support</h2>
-
-Any support you give will greatly help me to maintain and improve this addon. Thanks!
-
-[![Twitter Follow](https://img.shields.io/twitter/follow/Enirrisky)](https://twitter.com/Enirrisky?ref_src=twsrc%5Etfw)
-
-[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/sirrineprog)
-
-<h2 id="installation">Installation</h2>
+## Install
 
 ```bash
 npm install storybook-source-link
 ```
 <br />
 
-Add `storybook-source-code` to your addons array in the config object at `.storybook/main.js|ts`
+Add `storybook-source-code` to your addons array in the config object at `.storybook/main.ts`
 
 Example:
 
@@ -35,14 +32,14 @@ import type { StorybookConfig } from '@storybook/your-framework';
 const config: StorybookConfig = {
   // ...rest of config
   addons: [
-    '@storybook/addon-essentials'
+    '@storybook/addon-docs',
     "storybook-source-link" // <-- add it here
   ],
 };
 
 export default config;
 ```
-<br>
+
 Without any additional configuration,  
 you should see a new link in the toolbar like so:
 
