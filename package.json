@@ -12,7 +12,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/storybook-community/storybook-source-link"
+    "url": "https://github.com/Storybook-Community/storybook-source-link"
   },
   "type": "module",
   "author": "Jonathan Sirrine <sirrineprogramming@gmail.com>",
@@ -59,7 +59,7 @@
     "@commitlint/config-conventional": "^19.8.1",
     "@eslint/js": "^9.28.0",
     "@storybook/addon-docs": "next",
-    "@storybook/addon-essentials": "next",
+    "@storybook/addon-essentialshttps://github.com/Storybook-Community/storybook-source-link": "next",
     "@storybook/addon-interactions": "next",
     "@storybook/addon-links": "next",
     "@storybook/blocks": "next",
