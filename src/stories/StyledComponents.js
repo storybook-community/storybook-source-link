@@ -1,4 +1,4 @@
-import { styled } from '@storybook/theming';
+import { styled } from "@storybook/theming";
 
 export const Wrapper = styled.div`
   font-family: Helvetica, Arial, sans-serif;
@@ -10,7 +10,7 @@ export const Wrapper = styled.div`
   padding: 11px 20px;
   display: flex;
   flex-direction: column;
-`
+`;
 
 export const Header = styled.div`
   background: linear-gradient(45deg, #052F5F, #005377);
@@ -42,21 +42,21 @@ export const Header = styled.div`
   h3 {
     font-size: 0.8em;
   }
-`
+`;
 
 export const Section = styled.div`
   padding: 5px 20px;
-  background: #D5C67A;
+  background: #d5c67a;
   margin: 15px 0 0;
   border-radius: 6px;
-`
+`;
 
 export const Notes = styled.div`
-    padding: 20px;
-    margin-top: 15px;
-    background: #06A77D;
-    color: white;
-    line-height: 1.5em;
-    font-size: 1.2em;
-    border-radius: 6px;
-`
+  padding: 20px;
+  margin-top: 15px;
+  background: #06a77d;
+  color: white;
+  line-height: 1.5em;
+  font-size: 1.2em;
+  border-radius: 6px;
+`;
