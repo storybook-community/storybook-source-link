@@ -12,7 +12,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/Storybook-Community/storybook-source-link"
+    "url": "git+https://github.com/Storybook-Community/storybook-source-link.git"
   },
   "type": "module",
   "author": "Jonathan Sirrine <sirrineprogramming@gmail.com>",
