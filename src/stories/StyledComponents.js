@@ -1,4 +1,4 @@
-import { styled } from "@storybook/theming";
+import { styled } from 'storybook/theming';
 
 export const Wrapper = styled.div`
   font-family: Helvetica, Arial, sans-serif;
