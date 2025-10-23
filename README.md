@@ -5,9 +5,7 @@
 
 ------
 
-[![Storybook](https://img.shields.io/badge/-Storybook-FF4785?&logo=storybook&logoColor=white)](https://storybook.js.org/addons/storybook-source-link/) [![npm](https://img.shields.io/npm/v/storybook-source-link?logo=npm)](https://www.npmjs.com/package/storybook-source-link?activeTab=versions) [![npm](https://img.shields.io/npm/dt/storybook-source-link)](https://www.npmjs.com/package/storybook-source-link) [![npm](https://img.shields.io/npm/dm/storybook-source-link)](https://www.npmjs.com/package/storybook-source-link) [![npm](https://img.shields.io/npm/dw/storybook-source-link)](https://www.npmjs.com/package/storybook-source-link) [![npm](https://img.shields.io/npm/l/storybook-source-link)](https://www.npmjs.com/package/storybook-source-link?activeTab=license)  
-[![npms.io (final)](https://img.shields.io/npms-io/final-score/storybook-source-link)]() [![npms.io (quality)](https://img.shields.io/npms-io/quality-score/storybook-source-link)](https://npms.io/about) [![npms.io (maintenance)](https://img.shields.io/npms-io/maintenance-score/storybook-source-link)](https://npms.io/about) [![npms.io (popularity)](https://img.shields.io/npms-io/popularity-score/storybook-source-link)](https://npms.io/about)  
-[![Libraries.io dependency status for latest release](https://img.shields.io/librariesio/release/npm/storybook-source-link?logo=libraries.io&logoColor=white)](https://libraries.io/npm/storybook-source-link) [![Libraries.io SourceRank](https://img.shields.io/librariesio/sourcerank/npm/storybook-source-link?logo=libraries.io&logoColor=white)](https://docs.libraries.io/overview.html#sourcerank)
+[![Storybook](https://img.shields.io/badge/-Storybook-FF4785?&logo=storybook&logoColor=white)](https://storybook.js.org/addons/@storybook-community/storybook-source-link/) [![npm](https://img.shields.io/npm/v/@storybook-community/storybook-source-link?logo=npm)](https://www.npmjs.com/package/@storybook-community/storybook-source-link?activeTab=versions) [![npm](https://img.shields.io/npm/dt/@storybook-community/storybook-source-link)](https://www.npmjs.com/package/@storybook-community/storybook-source-link) [![npm](https://img.shields.io/npm/dm/@storybook-community/storybook-source-link)](https://www.npmjs.com/package/@storybook-community/storybook-source-link) [![npm](https://img.shields.io/npm/dw/@storybook-community/storybook-source-link)](https://www.npmjs.com/package/@storybook-community/storybook-source-link) [![npm](https://img.shields.io/npm/l/@storybook-community/storybook-source-link)](https://www.npmjs.com/package/@storybook-community/storybook-source-link?activeTab=license) [![Libraries.io dependency status for latest release](https://img.shields.io/librariesio/release/npm/@storybook-community/storybook-source-link?logo=libraries.io&logoColor=white)](https://libraries.io/npm/@storybook-community/storybook-source-link) [![Libraries.io SourceRank](https://img.shields.io/librariesio/sourcerank/npm/@storybook-community/storybook-source-link?logo=libraries.io&logoColor=white)](https://docs.libraries.io/overview.html#sourcerank)
 
 
 Provides a link to the story's source in the toolbar.
@@ -15,7 +13,7 @@ Provides a link to the story's source in the toolbar.
 ## Install
 
 ```bash
-npm install storybook-source-link
+npm install @storybook-community/storybook-source-link
 ```
 <br />
 
@@ -33,7 +31,7 @@ const config: StorybookConfig = {
   // ...rest of config
   addons: [
     '@storybook/addon-docs',
-    "storybook-source-link" // <-- add it here
+    "@storybook-community/storybook-source-link" // <-- add it here
   ],
 };
 
@@ -60,7 +58,7 @@ Here's the relevant code which governs how the link gets generated:
     return link
   }
 ```
-See [full source](https://github.com/Sirrine-Jonathan/storybook-source-link/blob/main/src/Tool.tsx) for how it's rendered.
+See [full source](https://github.com/storybook-community/storybook-source-link/blob/main/src/Tool.tsx) for how it's rendered.
 
 
 <h3 id="global-level">Global level</h3>
@@ -83,7 +81,7 @@ A few examples might look like:
 
 export const parameters = {
   // each story will link here, unless specified otherwise in either the component, or the story
-  sourceLink: 'https://github.com/Sirrine-Jonathan/storybook-source-link/',
+  sourceLink: 'https://github.com/storybook-community/storybook-source-link/',
 }
 ```
 
@@ -91,10 +89,10 @@ export const parameters = {
 // .storybook/preview.ts
 
 export const parameters = {
-  // stories will link to https://github.com/Sirrine-Jonathan/storybook-source-link by default
+  // stories will link to https://github.com/storybook-community/storybook-source-link by default
   sourceLink: 'storybook-source-link/',
   // setting this here lets us define sourceLinks at the component and story level that use the same prefix 
-  sourceLinkPrefix: 'https://github.com/Sirrine-Jonathan/'
+  sourceLinkPrefix: 'https://github.com/storybook-community/'
 }
 ```
 
@@ -104,7 +102,7 @@ export const parameters = {
 export const parameters = {
   // stories with a `sourceLink` parameter defined at the story or component level will use this as a prefix,
   // unless a different prefix is defined at the component or story level as well
-  sourceLinkPrefix: 'https://github.com/Sirrine-Jonathan/storybook-source-link/blob/main/stories/'
+  sourceLinkPrefix: 'https://github.com/storybook-community/storybook-source-link/blob/main/stories/'
   // no sourceLink parameter is defined here, so any story missing a sourceLink parameter will have no link
   // unless a link is specified at the component level
 }
@@ -134,7 +132,7 @@ export default {
   title: 'Example',
   component: Button,
   parameters: {
-    sourceLink: 'https://github.com/Sirrine-Jonathan/storybook-source-link/blob/main/stories/Button.js',
+    sourceLink: 'https://github.com/storybook-community/storybook-source-link/blob/main/stories/Button.js',
     sourceLinkPrefix: '' // pass an empty string to disable the prefix set globally for stories for this component
   }
 };

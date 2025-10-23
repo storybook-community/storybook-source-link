@@ -132,14 +132,21 @@
     ]
   },
   "storybook": {
-    "displayName": "Source Link",
+    "displayName": "Source Link (community version)",
     "supportedFrameworks": [
       "supported-frameworks"
     ],
-    "icon": "https://user-images.githubusercontent.com/321738/63501763-88dbf600-c4cc-11e9-96cd-94adadc2fd72.png"
+    "icon": "https://avatars.githubusercontent.com/u/216219414?s=200&v=4"
   },
   "packageManager": "pnpm@10.7.0",
   "engines": {
     "node": ">=22"
+  },
+  "pnpm": {
+    "overrides": {
+      "@eslint/plugin-kit@<0.3.4": ">=0.3.4",
+      "vite@>=6.0.0 <=6.3.5": ">=6.3.6",
+      "vite@>=6.0.0 <=6.4.0": ">=6.4.1"
+    }
   }
 }
