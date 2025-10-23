@@ -5,6 +5,7 @@ build-storybook.log
 .DS_Store
 .env
 .npmrc
+.eslintcache
 
 .yarn/*
 !.yarn/patches

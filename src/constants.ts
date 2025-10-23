@@ -1,4 +1,4 @@
-export const ADDON_ID = "storybook/source-link";
+export const ADDON_ID = 'storybook/source-link';
 export const TOOL_ID = `${ADDON_ID}/tool`;
 export const PARAM_KEY = `sourceLink`;
 export const PREFIX_PARAM_KEY = `sourceLinkPrefix`;

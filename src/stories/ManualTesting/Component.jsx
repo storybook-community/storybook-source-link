@@ -1,5 +1,5 @@
-import React from "react";
-import { Wrapper, Header, Section, Notes } from "../StyledComponents";
+import React from 'react';
+import { Wrapper, Header, Section, Notes } from '../StyledComponents';
 
 export const Component = ({ title, expectedLink, notes, details }) => {
   return (
