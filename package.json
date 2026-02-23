@@ -56,7 +56,7 @@
   },
   "devDependencies": {
     "@commitlint/config-conventional": "^20.4.0",
-    "@eslint/js": "^9.39.2",
+    "@eslint/js": "^10.0.1",
     "@storybook/addon-docs": "next",
     "@storybook/addon-essentials": "next",
     "@storybook/addon-interactions": "next",
@@ -81,7 +81,7 @@
     "boxen": "^8.0.1",
     "commitlint": "^20.4.0",
     "dedent": "^1.7.1",
-    "eslint": "^9.39.2",
+    "eslint": "^10.0.1",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-prettier": "^5.5.5",
     "eslint-plugin-react": "^7.37.5",
