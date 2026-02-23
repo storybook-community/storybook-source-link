@@ -116,7 +116,7 @@
   "publishConfig": {
     "access": "public",
     "provenance": true,
-    "registry": "https://registry.npmjs.org"
+    "registry": "https://registry.npmjs.org/"
   },
   "bundler": {
     "managerEntries": [
@@ -140,9 +140,14 @@
   },
   "pnpm": {
     "overrides": {
+      "@octokit/core": "^7",
+      "@octokit/request-error": "^7",
+      "@octokit/request": "^10",
+      "@octokit/plugin-paginate-rest": "^13",
       "@eslint/plugin-kit@<0.3.4": ">=0.3.4",
       "vite@>=6.0.0 <=6.3.5": ">=6.3.6",
-      "vite@>=6.0.0 <=6.4.0": ">=6.4.1"
+      "vite@>=6.0.0 <=6.4.0": ">=6.4.1",
+      "minimatch@<10.2.1": ">=10.2.1"
     }
   }
 }
