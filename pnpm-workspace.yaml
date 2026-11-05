@@ -1,0 +1,13 @@
+overrides:
+  '@octokit/core': ^7
+  '@octokit/request-error': ^7
+  '@octokit/request': ^10
+  '@octokit/plugin-paginate-rest': ^13
+  '@eslint/plugin-kit@<0.3.4': '>=0.3.4'
+  'vite@>=6.0.0 <=6.3.5': '>=6.3.6'
+  'vite@>=6.0.0 <=6.4.0': '>=6.4.1'
+  'minimatch@<10.2.1': '>=10.2.1'
+  '@babel/core@<7.29.6': ^7.29.6
+  'brace-expansion@>=5.0.0 <5.0.12': ^5.0.12
+  'lodash@<4.18.1': ^4.18.1
+  'ws@>=8.0.0 <8.21.0': ^8.21.0
